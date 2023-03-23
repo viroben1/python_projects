@@ -19,14 +19,20 @@ class Podracer:
 
 class AnakinsPod(Podracer):
     def __init__(self, max_speed, condition, price):
-        super().__init__(max_speed, condition, price):
+        super().__init__(max_speed, condition, price)
 
     def boost(self):
         self.max_speed *=2
 
 class SebulbasPod(Podracer):
     def __init__(self, max_speed, condition, price):
-        super().__init__(max_speed, condition, price):
+        super().__init__(max_speed, condition, price)
 
     def flame_jet(self, other):
         other.condition = "trashed"
+        
+        #it uses 3 of the 4 pillars of oop encapsulation inheritance and polimorpism
+        #yes it is possible to write but would not be as orginised as oop
+        #it assisted in solving the problem by providing a solution thru polymorpism and inheritance
+        #inheritance was used thru the reuse of the parent class
+        #poly was used thru thr use of the boost and flamejet methods
